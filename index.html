@@ -179,9 +179,6 @@
                         <a class="whiteText" href="#">Report It</a>
                     </li>
                     <li>
-                        <a class="whiteText" href="#">Reroute It</a>
-                    </li>
-                    <li>
                         <a class="whiteText" href="rewardit.html">Reward It</a>
                     </li>
                 </ul>
@@ -291,6 +288,1070 @@
     <script src="js/bootstrap.min.js"></script>
 
 <script>
+var json = "[
+ {
+   "FIELD1": "route_id",
+   "FIELD2": "route_short_name",
+   "FIELD3": "route_long_name",
+   "FIELD4": "route_desc",
+   "FIELD5": "route_type",
+   "FIELD6": "route_url",
+   "FIELD7": "route_color",
+   "FIELD8": "route_text_color"
+ },
+ {
+   "FIELD1": "7634",
+   "FIELD2": "1",
+   "FIELD3": "Centennial Oly. Park/Coronet Way",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7635",
+   "FIELD2": "2",
+   "FIELD3": "Ponce de Leon  Ave/Moreland Ave",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7636",
+   "FIELD2": "3",
+   "FIELD3": "Martin Luther King Jr. Dr/Auburn Av",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7637",
+   "FIELD2": "4",
+   "FIELD3": "Thomasville/Moreland Avenue",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7638",
+   "FIELD2": "5",
+   "FIELD3": "Piedmont Road/Sandy Springs",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7639",
+   "FIELD2": "6",
+   "FIELD3": "Emory",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7640",
+   "FIELD2": "8",
+   "FIELD3": "North Druid Hills Rd.",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7641",
+   "FIELD2": "9",
+   "FIELD3": "Toney Valley /Peachcrest Rd.",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7642",
+   "FIELD2": "12",
+   "FIELD3": "Howell Mill Rd/Cumberland",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7643",
+   "FIELD2": "13",
+   "FIELD3": "Fair Street/Mozley Park",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7644",
+   "FIELD2": "15",
+   "FIELD3": "Candler Rd/South DeKalb",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7645",
+   "FIELD2": "16",
+   "FIELD3": "Noble",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7646",
+   "FIELD2": "19",
+   "FIELD3": "Clairmont Road",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7647",
+   "FIELD2": "21",
+   "FIELD3": "Memorial Drive",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7648",
+   "FIELD2": "24",
+   "FIELD3": "East Lake/Hosea Williams",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7649",
+   "FIELD2": "25",
+   "FIELD3": "Peachtree Industrial Blvd",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7650",
+   "FIELD2": "26",
+   "FIELD3": "Perry Boulevard/North Avenue",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7651",
+   "FIELD2": "27",
+   "FIELD3": "Cheshire Bridge Rd/Ansley Mall",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7652",
+   "FIELD2": "30",
+   "FIELD3": "LaVista Rd",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7653",
+   "FIELD2": "32",
+   "FIELD3": "Bouldercrest/Georgia Aquarium",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7654",
+   "FIELD2": "33",
+   "FIELD3": "Briarcliff Road/Lenox",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7655",
+   "FIELD2": "34",
+   "FIELD3": "Gresham/Clifton Springs",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7656",
+   "FIELD2": "36",
+   "FIELD3": "North Decatur Rd/Virginia Highland",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7657",
+   "FIELD2": "37",
+   "FIELD3": "Defoors Ferry  Rd./Atlantic Station",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7658",
+   "FIELD2": "39",
+   "FIELD3": "Buford Highway",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7659",
+   "FIELD2": "42",
+   "FIELD3": "Pryor Road/McDaniel Street",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7660",
+   "FIELD2": "47",
+   "FIELD3": "I-85 Access Rd./Briarwood Rd.",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7661",
+   "FIELD2": "49",
+   "FIELD3": "McDonough Boulevard",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7662",
+   "FIELD2": "50",
+   "FIELD3": "Donald E Hollowell Pkwy.",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7663",
+   "FIELD2": "51",
+   "FIELD3": "Joseph E Boone Blvd/Dixie Hills",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7664",
+   "FIELD2": "53",
+   "FIELD3": "Skipper Drive/West Lake Avenue",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7665",
+   "FIELD2": "55",
+   "FIELD3": "Jonesboro Rd/Hutchens Rd/Forest Parkway",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7666",
+   "FIELD2": "56",
+   "FIELD3": "Adamsville/Collier Heights",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7667",
+   "FIELD2": "58",
+   "FIELD3": "Atlanta Industrial/Hollywood Rd",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7668",
+   "FIELD2": "60",
+   "FIELD3": "Hightower / Moores Mill",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7669",
+   "FIELD2": "66",
+   "FIELD3": "Lynhurst Dr/Barge Rd P/R",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7670",
+   "FIELD2": "67",
+   "FIELD3": "West End",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7671",
+   "FIELD2": "68",
+   "FIELD3": "Donnelly/Beecher",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7672",
+   "FIELD2": "71",
+   "FIELD3": "Cascade  Road",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7673",
+   "FIELD2": "73",
+   "FIELD3": "Fulton Industrial",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7674",
+   "FIELD2": "74",
+   "FIELD3": "Flat Shoals",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7675",
+   "FIELD2": "75",
+   "FIELD3": "Tucker",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7676",
+   "FIELD2": "78",
+   "FIELD3": "Cleveland Ave",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7677",
+   "FIELD2": "79",
+   "FIELD3": "Sylvan Hills",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7678",
+   "FIELD2": "81",
+   "FIELD3": "Venetian Drive/Adams Park",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7679",
+   "FIELD2": "82",
+   "FIELD3": "Camp Creek  / Welcome All",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7680",
+   "FIELD2": "83",
+   "FIELD3": "Campbellton / Greenbriar",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7681",
+   "FIELD2": "84",
+   "FIELD3": "East Point/Camp Creek",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7682",
+   "FIELD2": "85",
+   "FIELD3": "Roswell / Mansell Rd",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7683",
+   "FIELD2": "86",
+   "FIELD3": "Fairington Rd/McAfee Road",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7684",
+   "FIELD2": "87",
+   "FIELD3": "Roswell Rd./Morgan Falls",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7685",
+   "FIELD2": "89",
+   "FIELD3": "Flat Shoals Road/Scofield Road",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7686",
+   "FIELD2": "93",
+   "FIELD3": "East Point/Delowe Drive",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7687",
+   "FIELD2": "95",
+   "FIELD3": "Metropolitan Pkwy./ Hapeville",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7688",
+   "FIELD2": "99",
+   "FIELD3": "Boulevard/Monroe Drive",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7689",
+   "FIELD2": "102",
+   "FIELD3": "Moreland/Candler Park",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7690",
+   "FIELD2": "103",
+   "FIELD3": "N. Shallowford Rd./Peeler Rd.",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7691",
+   "FIELD2": "104",
+   "FIELD3": "Winters Chapel Road",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7692",
+   "FIELD2": "107",
+   "FIELD3": "Glenwood Road",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7693",
+   "FIELD2": "109",
+   "FIELD3": "Monroe Drive/Boulevard",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7694",
+   "FIELD2": "110",
+   "FIELD3": "Peachtree St./\"The Peach\"",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7695",
+   "FIELD2": "111",
+   "FIELD3": "Snapfinger Woods Dr. /Stonecrest",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7696",
+   "FIELD2": "114",
+   "FIELD3": "Columbia Drive",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7697",
+   "FIELD2": "115",
+   "FIELD3": "Covington Highway/South Hairston Rd",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7698",
+   "FIELD2": "116",
+   "FIELD3": "Redan Road / Stonecrest",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7699",
+   "FIELD2": "117",
+   "FIELD3": "Rockbridge Rd./Panola Rd.",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7700",
+   "FIELD2": "119",
+   "FIELD3": "Kensington/Hairston Rd.",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7701",
+   "FIELD2": "120",
+   "FIELD3": "E. Ponce de Leon Ave/Tucker",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7702",
+   "FIELD2": "121",
+   "FIELD3": "Stone Mountain/Memorial Drive",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7703",
+   "FIELD2": "123",
+   "FIELD3": "N. DeKalb Mall/Belvedere",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7704",
+   "FIELD2": "124",
+   "FIELD3": "Pleasantdale Road",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7705",
+   "FIELD2": "125",
+   "FIELD3": "Clarkston/Northlake",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7706",
+   "FIELD2": "126",
+   "FIELD3": "Chamblee  / NorthLake",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7707",
+   "FIELD2": "132",
+   "FIELD3": "Tilly Mill Road",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7708",
+   "FIELD2": "140",
+   "FIELD3": "North Point/Mansell P/R",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7709",
+   "FIELD2": "141",
+   "FIELD3": "Mansell Park & Ride/ Haynes Bridge Road/ Windward Park & Ride",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7710",
+   "FIELD2": "143",
+   "FIELD3": "Windward Park / Ride",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7711",
+   "FIELD2": "148",
+   "FIELD3": "Medical Ctr./Riveredge Pkwy.",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7712",
+   "FIELD2": "150",
+   "FIELD3": "Perimeter Center/Dunwoody Village",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7713",
+   "FIELD2": "153",
+   "FIELD3": "H E Holmes / Browntown",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7714",
+   "FIELD2": "155",
+   "FIELD3": "Windsor St./Lakewood  Ave.",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7715",
+   "FIELD2": "162",
+   "FIELD3": "Headland Dr. /Alison  Ct.",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7716",
+   "FIELD2": "165",
+   "FIELD3": "Fairburn Rd./Barge Rd. Park/Ride",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7717",
+   "FIELD2": "170",
+   "FIELD3": "Brownlee Rd./Peyton",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7718",
+   "FIELD2": "172",
+   "FIELD3": "Sylvan Road/Virginia Ave.",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7719",
+   "FIELD2": "178",
+   "FIELD3": "Empire Blvd./Southside Ind. Park",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7720",
+   "FIELD2": "180",
+   "FIELD3": "Fairburn / Palmetto",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7721",
+   "FIELD2": "181",
+   "FIELD3": "South Fulton P/R / Fairburn",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7722",
+   "FIELD2": "183",
+   "FIELD3": "Barge P/R /Lakewood",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7723",
+   "FIELD2": "185",
+   "FIELD3": "Alpharetta/Holcomb Bridge Rd",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7724",
+   "FIELD2": "186",
+   "FIELD3": "Rainbow Dr. / South DeKalb",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7725",
+   "FIELD2": "189",
+   "FIELD3": "Old National Hwy/Union Station",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7726",
+   "FIELD2": "191",
+   "FIELD3": "Justice Center/SR-85/Riverdale Road",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7727",
+   "FIELD2": "192",
+   "FIELD3": "Justice Center/Tara Blvd/Old Dixie Rd",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7728",
+   "FIELD2": "193",
+   "FIELD3": "Justice Center/SR-54/Jonesboro Rd.",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7729",
+   "FIELD2": "194",
+   "FIELD3": "Justice Center/Mt Zion/SR 42-Moreland Ave/East Point",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7730",
+   "FIELD2": "195",
+   "FIELD3": "Forest Parkway/Roosevelt Highway",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7731",
+   "FIELD2": "196",
+   "FIELD3": "Church/Upper Riv./Mt. Zion",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7732",
+   "FIELD2": "201",
+   "FIELD3": "Six Flags Over Georgia",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7733",
+   "FIELD2": "221",
+   "FIELD3": "Stone Mountain/Memorial Dr Limited",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "7734",
+   "FIELD2": "800",
+   "FIELD3": "Lovejoy-Justice Center",
+   "FIELD4": "",
+   "FIELD5": "3",
+   "FIELD6": "",
+   "FIELD7": "819FF7",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "8766",
+   "FIELD2": "BLUE",
+   "FIELD3": "BLUE-East/West Line",
+   "FIELD4": "",
+   "FIELD5": "1",
+   "FIELD6": "",
+   "FIELD7": "0101DF",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "8746",
+   "FIELD2": "GOLD",
+   "FIELD3": "GOLD-Northeast Doraville Line",
+   "FIELD4": "",
+   "FIELD5": "1",
+   "FIELD6": "",
+   "FIELD7": "FFBF00",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "8748",
+   "FIELD2": "GREEN",
+   "FIELD3": "GREEN-Proctor Creek Line",
+   "FIELD4": "",
+   "FIELD5": "1",
+   "FIELD6": "",
+   "FIELD7": "04B404",
+   "FIELD8": ""
+ },
+ {
+   "FIELD1": "8747",
+   "FIELD2": "RED",
+   "FIELD3": "RED-North South North Springs Line",
+   "FIELD4": "",
+   "FIELD5": "1",
+   "FIELD6": "",
+   "FIELD7": "FF0000",
+   "FIELD8": ""
+ }
+]";
+var object = JSON.parse(json);
+alert(object.count);
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunctionRoutes() {
