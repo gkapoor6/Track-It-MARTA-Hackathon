@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Map It</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/full-slider.css" rel="stylesheet">
+    <style>
+      .whiteText {
+        color: white !important;
+      }
+      .center {
+        .background: im
+         }
+
+      .dropbtnRoutes {
+    background-color: #EC7D00;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtnRoutes:hover, .dropbtnRoutes:focus {
+    background-color: #EC7D00;
+}
+
+.dropdownRoutes {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-contentRoutes {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-contentRoutes a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownRoutes a:hover {background-color: #EC7D00}
+
+.show {display:block;}
+
+
+
+      .dropbtnStops {
+    background-color: #EC7D00;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtnStops:hover, .dropbtnStops:focus {
+    background-color: #EC7D00;
+}
+
+.dropdownStops {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-contentStops {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-contentStops a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownStops a:hover {background-color: #EC7D00}
+
+.show {display:block;}
+
+
+
+
+      .dropbtnTimes {
+    background-color: #EC7D00;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtnTimes:hover, .dropbtnTimes:focus {
+    background-color: #EC7D00;
+}
+
+.dropdownTimes {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-contentTimes {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-contentTimes a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownTimes a:hover {background-color: #EC7D00}
+
+.show {display:block;}
+</style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <img src="img/logo.png" height="60">
+                    </li>
+                    <li>
+                        <a class="whiteText" href="index.html">Track It</a>
+                    </li>                    
+                    <li>
+                        <a class="whiteText" href="mapit.html">Map It</a>
+                    </li>
+                    <li>
+                        <a class="whiteText" href="#">Report It</a>
+                    </li>
+                    <li>
+                        <a class="whiteText" href="#">Reroute It</a>
+                    </li>
+                    <li>
+                        <a class="whiteText" href="rewardit.html">Reward It</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- DDL for Stops -->
+  </br>
+  </br>
+  </br>
+  </br>
+    <div class="dropdownRoutes">
+<button onclick="myFunctionRoutes()" class="dropbtnRoutes" style="text-align:center">Routes</button>
+  <div id="myDropdownRoutes" class="dropdown-contentRoutes">
+       <a href="#">79 - Sylvan Hills</a>
+       <a href="#">78 - Cleveland Ave</a>
+       <a href="#">71 - Cascade Road</a>
+       <a href="#">6 - Emory</a>
+       <a href="#">19 - Clairemont Road</a>
+  </div>
+  <div class="dropdownStops">
+<button onclick="myFunctionStops()" class="dropbtnStops">Stops</button>
+  <div id="myDropdownStops" class="dropdown-contentStops">
+       <a href="#">Jefferson Ave  Batavia St</a>
+       <a href="#">Jefferson Ave  Jewel St</a>
+       <a href="#">Jefferson Ave  Blount St</a>
+       <a href="#">Jefferson Ave  Sylvan Ter</a>
+       <a href="#">Jefferson Ave  Sylvan Rd</a>
+
+  </div>
+</div>
+  <div class="dropdownTimes">
+<button onclick="myFunctionTimes()" class="dropbtnTimes">Times</button>
+  <div id="myDropdownTimes" class="dropdown-contentTimes">
+       <a href="#">8:25</a>
+       <a href="#">8:55</a>
+       <a href="#">9:25</a>
+       <a href="#">9:55</a>
+       <a href="#">10:25</a>
+       <a href="#">10:55</a>
+       <a href="#">11:25</a>
+       <a href="#">11:55</a>
+
+  </div>
+</div>
+
+    <!-- Images and buttons -->
+    <div style="text-align:center"><img src="img/mapit.png" height="80" class="center"><img src="img/map.jpg" height="350" width="350" class="center">
+     <p
+    </div>
+
+    <div align="center">
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" style="margin-right:15px;margin-left:150px;background-color:#EC7D00;">Submit</button>
+    </div>
+
+    <header>
+    </header>
+
+    <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Done!</h4>
+            </div>
+            <div class="modal-body">
+              <p>Trip recorded. You've earned 10 points!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunctionRoutes() {
+    document.getElementById("myDropdownRoutes").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtnRoutes')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-contentRoutes");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunctionStops() {
+    document.getElementById("myDropdownStops").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtnStops')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-contentStops");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunctionTimes() {
+    document.getElementById("myDropdownTimes").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtnTimes')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-contentTimes");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+
+</html>

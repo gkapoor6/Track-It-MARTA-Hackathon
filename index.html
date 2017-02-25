@@ -44,7 +44,7 @@
 .dropdown-contentRoutes {
     display: none;
     position: absolute;
-    background-color: #3A75DD;
+    background-color: white;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -85,7 +85,7 @@
 .dropdown-contentStops {
     display: none;
     position: absolute;
-    background-color: #3A75DD;
+    background-color: white;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -127,7 +127,7 @@
 .dropdown-contentTimes {
     display: none;
     position: absolute;
-    background-color: #3A75DD;
+    background-color: white;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -170,7 +170,10 @@
                         <img src="img/logo.png" height="60">
                     </li>
                     <li>
-                        <a class="whiteText" href="#">Map It</a>
+                        <a class="whiteText" href="index.html">Track It</a>
+                    </li>
+                    <li>
+                        <a class="whiteText" href="mapit.html">Map It</a>
                     </li>
                     <li>
                         <a class="whiteText" href="#">Report It</a>
@@ -179,7 +182,7 @@
                         <a class="whiteText" href="#">Reroute It</a>
                     </li>
                     <li>
-                        <a class="whiteText" href="#">Reward It</a>
+                        <a class="whiteText" href="rewardit.html">Reward It</a>
                     </li>
                 </ul>
             </div>
@@ -193,7 +196,7 @@
   </br>
   </br>
     <div class="dropdownRoutes">
-<button onclick="myFunctionRoutes()" class="dropbtnRoutes">Routes</button>
+<button onclick="myFunctionRoutes()" class="dropbtnRoutes" style="text-align:center">Routes</button>
   <div id="myDropdownRoutes" class="dropdown-contentRoutes">
        <a href="#">79 - Sylvan Hills</a>
        <a href="#">78 - Cleveland Ave</a>
@@ -228,10 +231,10 @@
 </div>
 
     <!-- Images and buttons -->
-    <div style="text-align:center"><img src="img/track2.png" height="80" class="center"><img src="img/map.jpg" height="350" width="350" class="center">
+    <div style="text-align:center"><img src="img/track2.png" height="200" class="center"><img src="img/map.jpg" height="350" width="350" class="center">
     </div>
     <div align="center">
-      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" style="margin-right:15px;margin-left:150px">Made It</button>
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" style="margin-right:15px;margin-left:200px">Made It</button>
       <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal2" style="margin-left:15px;">Missed It</button>
     </div>
 
@@ -246,10 +249,10 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Done!</h4>
+              <h4 class="modal-title">Done</h4>
             </div>
             <div class="modal-body">
-              <p>You made it! You've earned 10 points!</p>
+              <p style="font-size:40px">You made it. You've earned 10 points!</p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -267,10 +270,10 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Done!</h4>
+              <h4 class="modal-title">Done</h4>
             </div>
             <div class="modal-body">
-              <p>Oops, you missed it. Data recorded. You've earned 10 points!</p>
+              <p style="font-size:40px">Oops, you missed it. Data recorded. You've earned 10 points!</p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
