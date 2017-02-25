@@ -1,3 +1,3 @@
 # Track-It-MARTA-Hackathon
-# Install XAMPP to view!
+# Install XAMPP
 Unzip files in xampp>htdocs
