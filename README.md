@@ -1,5 +1,5 @@
 # Track-It-MARTA-Hackathon
-# Install XAMPP
+Install XAMPP
 Unzip files in xampp>htdocs
 
 # MAP IT
